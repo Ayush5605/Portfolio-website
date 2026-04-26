@@ -508,7 +508,7 @@ export default function App() {
                 </p>
                 <div className="flex gap-8 items-center bg-white/[0.02] border border-white/5 p-6 inline-flex">
                   <a href="https://github.com" className="text-white/20 hover:text-white transition-all"><Github className="w-8 h-8" /></a>
-                  <a href="https://linkedin.com" className="text-white/20 hover:text-white transition-all"><Linkedin className="w-8 h-8" /></a>
+                  <a href="https://www.linkedin.com/in/ayushauti5605/" className="text-white/20 hover:text-white transition-all"><Linkedin className="w-8 h-8" /></a>
                   <a href="mailto:ayushauti5605@gmail.com" className="text-white/20 hover:text-white transition-all"><Mail className="w-8 h-8" /></a>
                 </div>
               </div>
@@ -523,7 +523,7 @@ export default function App() {
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="bg-white/[0.02] border border-white/10 p-4 text-white font-mono text-sm outline-none focus:border-matrix-500/50 transition-colors uppercase"
+                      className="bg-white/[0.02] border border-white/10 p-4 text-white font-mono text-sm outline-none focus:border-matrix-500/50 transition-colors "
                     />
                   </div>
                   <div className="flex flex-col gap-2">
@@ -534,7 +534,7 @@ export default function App() {
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="bg-white/[0.02] border border-white/10 p-4 text-white font-mono text-sm outline-none focus:border-matrix-500/50 transition-colors uppercase"
+                      className="bg-white/[0.02] border border-white/10 p-4 text-white font-mono text-sm outline-none focus:border-matrix-500/50 transition-colors "
                     />
                   </div>
                   <div className="flex flex-col gap-2">
@@ -545,7 +545,7 @@ export default function App() {
                       rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="bg-white/[0.02] border border-white/10 p-4 text-white font-mono text-sm outline-none focus:border-matrix-500/50 transition-colors uppercase resize-none"
+                      className="bg-white/[0.02] border border-white/10 p-4 text-white font-mono text-sm outline-none focus:border-matrix-500/50 transition-colors  resize-none"
                     />
                   </div>
                 </div>
