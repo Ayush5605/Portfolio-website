@@ -227,7 +227,15 @@ export default function App() {
       else if (cmd === 'contact') response = 'ayushauti5605@gmail.com | +91 8149457576';
       else if (cmd === 'projects') response = 'Finance AI,Rental Hub,School ERP';
       else if (cmd === 'skills') response = 'MERN Stack, Java, Python, SQL';
-      else if (cmd === 'resume') response = 'Opening resume.pdf in a new data stream...';
+      else if (cmd === 'resume') {
+        response = 'Downloading resume.pdf...';
+        const link = document.createElement('a');
+        link.href = '/resume.pdf'; // Assumes resume.pdf is in the public folder
+        link.download = 'Ayush_Auti_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
       else if (cmd === 'status') response = 'Current Status: Open for Internships/Roles. Build Pipeline: Stable.';
       else response = `ERR: Command "${cmd}" not found. Try "help".`;
 
