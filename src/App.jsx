@@ -507,7 +507,7 @@ export default function App() {
                   Accepting high-bandwidth challenges and engineering collaborations.
                 </p>
                 <div className="flex gap-8 items-center bg-white/[0.02] border border-white/5 p-6 inline-flex">
-                  <a href="https://github.com" className="text-white/20 hover:text-white transition-all"><Github className="w-8 h-8" /></a>
+                  <a href="https://github.com/Ayush5605" className="text-white/20 hover:text-white transition-all"><Github className="w-8 h-8" /></a>
                   <a href="https://www.linkedin.com/in/ayushauti5605/" className="text-white/20 hover:text-white transition-all"><Linkedin className="w-8 h-8" /></a>
                   <a href="mailto:ayushauti5605@gmail.com" className="text-white/20 hover:text-white transition-all"><Mail className="w-8 h-8" /></a>
                 </div>
