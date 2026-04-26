@@ -225,8 +225,8 @@ export default function App() {
       if (cmd === 'help') response = 'Available: help, clear, contact, projects, skills, resume, status';
       else if (cmd === 'clear') { setTerminalHistory([]); setInputValue(''); return; }
       else if (cmd === 'contact') response = 'ayushauti5605@gmail.com | +91 8149457576';
-      else if (cmd === 'projects') response = 'Indexing repositories... Scroll to PROJECT section for full UI.';
-      else if (cmd === 'skills') response = 'MERN Stack, Java, Python, SQL, Cloud Dev...';
+      else if (cmd === 'projects') response = 'Finance AI,Rental Hub,School ERP';
+      else if (cmd === 'skills') response = 'MERN Stack, Java, Python, SQL';
       else if (cmd === 'resume') response = 'Opening resume.pdf in a new data stream...';
       else if (cmd === 'status') response = 'Current Status: Open for Internships/Roles. Build Pipeline: Stable.';
       else response = `ERR: Command "${cmd}" not found. Try "help".`;
@@ -336,8 +336,8 @@ export default function App() {
                 </h1>
 
                 <p className="text-lg md:text-xl text-zinc-400 max-w-lg mb-12 font-medium leading-relaxed">
-                  3rd Year Computer Engineering @ <span className="text-matrix-500">D.Y. Patil IT</span>.
-                  Specializing in the <span className="text-white border-b border-white/10">MERN Stack</span> and AI-driven architecture.
+                  3rd Year Computer Engineering @ <span className="text-matrix-500">D.Y. Patil Institute of Technology</span>.
+                  Specializing in the <span className="text-white border-b border-white/10">MERN Stack</span> and currently pursuing AIML.
                 </p>
 
                 <div className="flex flex-wrap gap-6 justify-center lg:justify-start">
@@ -406,12 +406,12 @@ export default function App() {
             <div className="space-y-8">
               <h3 className="text-4xl font-black text-white tracking-tighter uppercase">Identity Profile</h3>
               <p className="text-xl leading-relaxed text-zinc-100 font-medium">
-                Passionate developer focused on creating high-performance, scalable web systems. Won the Solo Dev challenge by building a full ERP module in 8 hours.
+                Passionate developer focused on creating high-performance, scalable web systems. Solely won a college level 8 hours hackathon.
               </p>
               <div className="grid gap-4">
                 {[
-                  { icon: Trophy, title: 'Competition', val: '1st Place Solo Hackathon' },
-                  { icon: School, title: 'Education', val: '8.5 GPA @ D.Y. Patil' },
+                  { icon: Trophy, title: 'Competition', val: '1st Place in Hackathon' },
+                  { icon: School, title: 'Education', val: '8.5 GPA @ D.Y. Patil Institute of Technology' },
                   { icon: Briefcase, title: 'Current Role', val: 'Full-stack Intern' }
                 ].map((s, i) => (
                   <div key={i} className="flex items-center gap-4 p-4 border border-white/5 bg-white/[0.02]">
@@ -446,7 +446,7 @@ export default function App() {
                     Developing enterprise-scale ERP solutions and MERN microservices at XenoTech Solutions.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['NODE', 'REACT', 'RBAC', 'REST'].map(t => (
+                    {['NODE', 'REACT','MONGODB', 'REST'].map(t => (
                       <span key={t} className="text-[8px] font-black px-2 py-0.5 border border-white/10 text-white/40">{t}</span>
                     ))}
                   </div>
@@ -461,18 +461,18 @@ export default function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard
               title="SCHOOL ERP v3"
-              desc="Comprehensive institutional management suite with automated billing and attendance."
-              tags={['MERN', 'NEXT', 'AWS']}
+              desc="Comprehensive institutional management suite with role wise access control."
+              tags={['ReactJS', 'NodeJS','MongoDB', 'REST','Tanstack Query','JWT']}
             />
             <ProjectCard
               title="FINANCE AI"
-              desc="Deep-learning utility for expense tracking and predictive financial modeling."
-              tags={['PYTORCH', 'REACT', 'DB']}
+              desc="Deep-learning utility for expense tracking and personlised financial advice generation"
+              tags={['ReactJS','MongoDB','NodeJS','JWT']}
             />
             <ProjectCard
               title="RENTAL HUB"
-              desc="Real-estate marketplace with geocoding, multi-role auth, and payment gateway."
-              tags={['EXPRESS', 'GEO', 'STRIPE']}
+              desc="Real-estate marketplace with geocoding, multi-role auth"
+              tags={['EXPRESS', 'GEOCODING','MondoDB','NodeJS']}
             />
           </div>
         </Section>
@@ -481,11 +481,11 @@ export default function App() {
         <Section id="skills" title="Matrix" icon={Cpu}>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             <SkillBlock label="Languages" items={['JS', 'Java', 'Python', 'SQL']} icon={Code2} />
-            <SkillBlock label="Backend" items={['Node', 'Express', 'PHP', 'API']} icon={Layers} />
-            <SkillBlock label="Frontend" items={['React', 'Next', 'Tailwind', 'Canvas']} icon={Monitor} />
-            <SkillBlock label="Storage" items={['Mongo', 'Postgres', 'Redis', 'Supabase']} icon={Database} />
-            <SkillBlock label="DevOps" items={['Git', 'Docker', 'AWS', 'Linux']} icon={Settings} />
-            <SkillBlock label="Utilities" items={['Postman', 'Cursor', 'Vim', 'Thunder']} icon={Globe} />
+            <SkillBlock label="Backend" items={['Node', 'Express', 'API']} icon={Layers} />
+            <SkillBlock label="Frontend" items={['React', 'Tailwind', 'Canvas','Material UI','Bootstrap']} icon={Monitor} />
+            <SkillBlock label="Storage" items={['Mongo', 'Postgres', 'Supabase']} icon={Database} />
+            <SkillBlock label="DevOps" items={['Git']} icon={Settings} />
+            <SkillBlock label="Utilities" items={['Postman', 'Cursor', 'Antigravity', 'Thunder']} icon={Globe} />
           </div>
         </Section>
 

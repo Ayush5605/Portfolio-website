@@ -2,8 +2,13 @@ import express from 'express';
 import nodemailer from 'nodemailer';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+dotenv.config({ path: join(__dirname, '..', '.env') });
 
 const app = express();
 app.use(cors());
@@ -11,15 +16,16 @@ app.use(express.json());
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
+
+  
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS, // Use an App Password if using Gmail
+    pass: process.env.EMAIL_PASS, 
   },
 });
 
 app.post('/api/contact', async (req, res) => {
   const { name, email, message } = req.body;
-
   const mailOptions = {
     from: email,
     to: process.env.EMAIL_USER,
