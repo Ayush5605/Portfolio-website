@@ -101,7 +101,7 @@ Steps:
 ## 📬 Contact
 
 * 📧 Email: [ayushauti5605@gmail.com](mailto:ayushauti5605@gmail.com)
-* 💼 LinkedIn: https://linkedin.com/in/your-profile
+* 💼 LinkedIn: https://www.linkedin.com/in/ayushauti5605/
 * 🐙 GitHub: https://github.com/Ayush5605
 
 ---
